@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-rows: repeat(2,100px);
+            grid-template-columns: repeat(6,150px);
+            gap: 20px;
+            padding: 20px;
+        }
+        .odd{
+            background-color:#444444;
+            color:white;
+        }
+        .even{
+            background-color:#cccccc;
+            color:black;
+        }
+        .box1{
+            grid-row-start: 2;
+        }
+        .box2{
+            grid-column-start: 2;
+            grid-row-start: 2;
+        }
+        .box{
+            width: 150px;
+            height: 100px;
+            border-radius: 5px;
+            text-align:center;
+            font-size: larger;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box1 odd">1</div>
+        <div class="box box2 even">2</div>
+        <div class="box box3 odd">3</div>
+        <div class="box box4 even">4</div>
+        <div class="box box5 odd">5</div>
+        <div class="box box6 even">6</div>
+        <div class="box box7 odd">7</div>
+        <div class="box box8 even">8</div>
+        </div>
+</body>
+</html>

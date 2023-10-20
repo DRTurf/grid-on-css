@@ -1,0 +1,28 @@
+grid-auto-row:
+
+Sets the size of rows in a grid container that were created without an explicit size.
+
+grid-auto-column:
+
+Sets the size of columns in a grid container that were created without an explicit size.
+
+
+
+Eg:
+<html>
+<head>
+<style>
+    .continer{
+        display:grid;
+        grid-auto-column:auto;  //can be used to set columns without size of the grid container
+        grid-auto-row:auto;  //can be used to set rows without size of the grid container
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+</div>
+</body>
+</html>

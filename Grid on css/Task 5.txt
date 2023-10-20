@@ -1,0 +1,33 @@
+justify-items:
+
+The justify-items property is set on the grid container to give child elements (grid items) alignment in the inline direction.
+This is container level.
+
+justify-self:
+
+The justify-self property aligns a grid item within its grid cell in the inline direction.
+This is item level.
+
+
+
+Eg:
+<html>
+<head>
+<style>
+    .continer{
+        display:grid;
+        justify-items:left;  //will justify everything on the left.
+    }
+    .box2{
+        justify-self:right;  // will justify only the div with  the class "box2" on the right.
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="box1">1</div>
+    <div class="box2">2</div>
+    <div class="box3">3</div>
+</div>
+</body>
+</html>
